@@ -17,8 +17,8 @@
 		<property name="suffix" value=".jsp" />
 	</bean>	
 	<!-- 引入dubbo服务 -->
-	<dubbo:application name="taotao-web"/>
+	<dubbo:application name="taotao-protal"/>
 	<dubbo:registry group="dubbo" address="47.93.32.124:2181" protocol="zookeeper"/>
-	<dubbo:reference interface="com.taotao.service.TestService" id="testService" timeout="300000"/>	
-	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService"  timeout="300000" />							
+	<!-- dubbo:reference interface="com.taotao.service.TestService" id="testService" timeout="300000"/>	 -->
+	
 </beans>
